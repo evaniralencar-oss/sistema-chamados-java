@@ -4,7 +4,7 @@ public class Main {
                 1,
                 "Impressora não funciona",
                 "Usuário não consegue imprimir documentos.",
-                "Alta"
+                "Baixa"
         );
 
         chamado.exibirDetalhes();
