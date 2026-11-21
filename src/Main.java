@@ -1,13 +1,21 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner titulo = new Scanner(System.in);
-        System.out.println("Digite o titulo do chamado");
+
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.println("Digite o titulo do chamado:  ");
+        String titulo = teclado.nextLine();
+
+        System.out.println("Descreva o problema:  ");
+        String descricao = teclado.nextLine();
+
         Chamado chamado = new Chamado(
                 1,
-                titulo.nextLine(),
-                "Usuário não consegue imprimir documentos.",
+                titulo,
+                descricao,
                 "Baixa"
         );
 
